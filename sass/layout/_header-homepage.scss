@@ -1,8 +1,7 @@
 @use '../tools' as t;
 
 .header {
-    display: flex;
-    justify-content: center;
+    @include t.flex-center;
     background-color: t.$color-white;
     height: 63px;
 }
@@ -11,8 +10,7 @@
 }
 
 .location {
-    display: flex;
-    justify-content: center;
+    @include t.flex-center;
     align-items: center;
     gap: 17px;
     background-color: t.$color-grey;
