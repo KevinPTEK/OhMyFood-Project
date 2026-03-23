@@ -1,0 +1,23 @@
+@use '../tools' as t;
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: t.$color-white;
+    height: 63px;
+}
+.header__title {
+    font-family: t.$font-title;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    background-color: t.$color-grey;
+}
+
+.location__text {
+    font-family: t.$font-text;
+}

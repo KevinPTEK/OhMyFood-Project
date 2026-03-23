@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  height: 63px;
+}
+
+.header__title {
+  font-family: "Shrikhand";
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: #EAEAEA;
+}
+
+.location__text {
+  font-family: "Roboto";
+}
+
+/*# sourceMappingURL=style.css.map */
