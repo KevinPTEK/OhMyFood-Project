@@ -1,4 +1,28 @@
+@use 'variables' as v;
+
+// font text
+@mixin font-text-small {
+    font-family: v.$font-text;
+    font-weight: 300;
+}
+
+@mixin font-text-medium {
+    font-family: v.$font-text;
+    font-weight: 500;
+}
+
+@mixin font-text-large {
+    font-family: v.$font-text;
+    font-weight: 700;
+}
+
+// flex
 @mixin flex-center {
     display: flex;
     justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
 }

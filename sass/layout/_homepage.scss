@@ -1,0 +1,45 @@
+@use '../tools' as t;
+
+.header {
+    @include t.flex-center;
+    background-color: t.$color-white;
+    height: 63px;
+    padding-bottom: 13px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+        &__title {
+            font-family: t.$font-title;
+        }
+}
+
+.location {
+    @include t.flex-center;
+    align-items: center;
+    gap: 17px;
+    background-color: t.$color-grey;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        &__text {
+            @include t.font-text-medium;
+        }
+}
+
+.explore-restaurants {
+    background-color: t.$color-grey-light;
+
+        &__title {
+            @include t.flex-center;
+            @include t.font-text-large;
+            text-align: center;
+            padding: 39px 42px 0 58px;
+        }
+
+            &__text {
+                @include t.flex-center;
+                @include t.font-text-small;
+                font-size: 18px;
+                text-align: center;
+            }
+}
