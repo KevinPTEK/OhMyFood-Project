@@ -1,0 +1,15 @@
+@use '../utils/' as u;
+
+.header {
+    @include u.flex-center;
+    background-color: u.$color-white;
+    height: 63px;
+    padding-bottom: 13px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+        &__title {
+            font-family: u.$font-title;
+        }
+}

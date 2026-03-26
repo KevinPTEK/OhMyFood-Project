@@ -1,0 +1,35 @@
+@use '../utils/' as u;
+
+.location {
+    @include u.flex-center;
+    align-items: center;
+    gap: 17px;
+    background-color: u.$color-grey;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        &__text {
+            @include u.font-text-medium;
+            margin: 15px 0 15px 0;
+        }
+}
+
+.explore-restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 39px 0 57px 0;
+    gap: 18px;
+    background-color: u.$color-grey-light;
+
+        &__title {
+            @include u.font-text-large;
+            text-align: center;
+        }
+
+            &__text {
+                @include u.font-text-small;
+                text-align: center;
+                font-size: 18px;
+                margin-bottom: 27px;
+            }
+}
