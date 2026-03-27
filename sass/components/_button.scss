@@ -1,6 +1,6 @@
 @use '../utils' as u;
 
-.explore-restaurants__button {
+.btn {
     display: flex;
     align-items: center;
     @include u.font-text-medium;
