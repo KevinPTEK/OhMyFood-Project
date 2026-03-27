@@ -93,6 +93,23 @@ body, h1, h2, h3, p {
   font-size: 16px;
 }
 
+.selection-restaurants {
+  background-color: #F6F6F6;
+  padding: 54px 18px 66px 17px;
+}
+.selection-restaurants__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
 .btn {
   display: flex;
   align-items: center;
