@@ -24,12 +24,12 @@
             text-align: center;
         }
 
-            &__text {
-                @include u.font-text-small;
-                text-align: center;
-                font-size: 18px;
-                margin-bottom: 27px;
-            }
+        &__text {
+            @include u.font-text-small;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 27px;
+        }
 }
 
 .operations {
