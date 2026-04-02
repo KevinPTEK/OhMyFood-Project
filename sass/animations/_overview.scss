@@ -1,0 +1,12 @@
+@use '../utils' as u;
+
+.animation-overview {
+    transition: filter 400ms;
+
+        &:hover {
+        background: linear-gradient(u.$color-secondary, u.$color-primary);
+        filter: brightness(1.10);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
+    }
+}
+    
