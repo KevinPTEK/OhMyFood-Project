@@ -1,12 +1,53 @@
 @use '../utils' as u;
 
-.animation-overview {
+@mixin hover-lighten {
     transition: filter 400ms;
 
         &:hover {
-        background: linear-gradient(u.$color-secondary, u.$color-primary);
-        filter: brightness(1.10);
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
-    }
+            filter: brightness(1.10);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
+        }
 }
+
+@mixin hearts-interaction {
+    position: relative;
+    width: 22px;
+    height: 21px;
+    cursor: pointer;
+
+        // Propriété général before, after
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            inset: 0; //100% de la largeur et hauteur
+            transition: opacity 600ms, transform 400ms;
+            mask-size: contain;
+            mask-repeat: no-repeat;
+        }
     
+        &::before {
+            background-color: u.$color-black;
+            z-index: 2;
+            mask-image: url('images/icones/hearts-empty.svg');
+            -webkit-mask-image: url('images/icones/hearts-empty.svg');
+        }
+    
+        &::after {
+            background: linear-gradient(to top, u.$color-primary, u.$color-secondary);
+            opacity: 0;
+            z-index: 1;
+            transform: scale(0);
+            mask-image: url('images/icones/hearts-full.svg');
+            -webkit-mask-image: url('images/icones/hearts-full.svg');
+        }
+    
+        &:hover {
+            &::before { 
+                opacity: 0; 
+            }
+            &::after { 
+                opacity: 1; 
+                transform: scale(1); 
+            }
+        }
+}

@@ -1,9 +1,11 @@
 @use '../utils' as u;
+@use '../animations' as a;
 
 .btn {
+    @include u.font-text-medium;
+    @include a.hover-lighten;
     display: flex;
     align-items: center;
-    @include u.font-text-medium;
     font-size: 16px;
     height: 50px;
     color: u.$color-white;
