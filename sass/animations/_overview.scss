@@ -23,6 +23,8 @@
             transition: opacity 600ms, transform 400ms;
             mask-size: contain;
             mask-repeat: no-repeat;
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
         }
     
         &::before {
@@ -33,7 +35,7 @@
         }
     
         &::after {
-            background: linear-gradient(to top, u.$color-primary, u.$color-secondary);
+            background: linear-gradient(u.$color-primary, u.$color-secondary);
             opacity: 0;
             z-index: 1;
             transform: scale(0);

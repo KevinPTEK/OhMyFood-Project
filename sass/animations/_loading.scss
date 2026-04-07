@@ -1,0 +1,76 @@
+@use '../utils' as u;
+
+
+.container__loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    animation: hide-loader 1s ease forwards 3s;
+    background-color: u.$color-white;
+    z-index: 3;
+}
+
+.loader {
+  position: relative;
+  width: 340px;
+  height: 340px;
+
+  &__circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      border: 4px solid transparent;
+
+    &--1 {
+      width: 220px;
+      height: 220px;
+      border-top-color: #E2007C;
+      animation: animation-loader 1.2s linear infinite;
+    }
+
+    &--2 {
+      width: 190px;
+      height: 190px;
+      border-top-color: #404041;
+      animation: animation-loader 1s linear infinite reverse;
+    }
+
+    &--3 {
+      width: 170px;
+      height: 170px;
+      border-top-color: #E2007C;
+      animation: animation-loader 1.5s linear infinite;
+    }
+
+    &--4 {
+      width: 120px;
+      height: 120px;
+      border-top-color: #404041;
+      animation: animation-loader 0.8s linear infinite reverse;
+    }
+  }
+}
+
+@keyframes hide-loader {
+  0% {
+    opacity: 1; 
+    visibility: visible;
+  }
+  100% {
+    opacity: 0; 
+    visibility: hidden;
+  }
+}
+
+@keyframes animation-loader {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
