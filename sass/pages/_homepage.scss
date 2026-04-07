@@ -15,7 +15,7 @@
 .explore-restaurants {
     @include u.flex-column;
     align-items: center;
-    padding: 39px 0 57px 0;
+    padding: 39px 10px 57px 10px;
     gap: 18px;
     background-color: u.$color-grey-light;
 
