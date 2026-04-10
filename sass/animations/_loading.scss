@@ -1,7 +1,7 @@
 @use '../utils' as u;
 
 
-.container__loader {
+.loader--overlay {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,28 +28,28 @@
     &--1 {
       width: 220px;
       height: 220px;
-      border-top-color: #E2007C;
+      border-top-color: u.$color-primary;
       animation: animation-loader 1.2s linear infinite;
     }
 
     &--2 {
       width: 190px;
       height: 190px;
-      border-top-color: #404041;
+      border-top-color: u.$color-secondary;
       animation: animation-loader 1s linear infinite reverse;
     }
 
     &--3 {
       width: 170px;
       height: 170px;
-      border-top-color: #E2007C;
+      border-top-color: u.$color-primary;
       animation: animation-loader 1.5s linear infinite;
     }
 
     &--4 {
       width: 120px;
       height: 120px;
-      border-top-color: #404041;
+      border-top-color: u.$color-secondary;
       animation: animation-loader 0.8s linear infinite reverse;
     }
   }
