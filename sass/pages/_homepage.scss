@@ -16,9 +16,12 @@
 .explore-restaurants {
     @include u.flex-column;
     align-items: center;
-    padding: 39px 10px 57px 10px;
+    padding: 39px 10px 57px;
     gap: 18px;
     background-color: u.$color-grey-light;
+    @include u.desktop {
+        padding: 30px 0;
+    }
 
         &__title {
             @include u.font-text-large;
@@ -36,7 +39,10 @@
 .operations {
     @include u.flex-column;
     gap: 25px;
-    padding: 48px 20px 68px 20px;
+    padding: 48px 20px 68px;
+    @include u.desktop {
+        padding: 50px 180px;
+    }
 
         &__title {
             @include u.font-text-large;
@@ -84,17 +90,24 @@
         &__step-title {
             @include u.font-text-medium;
             font-size: 16px;
+            padding-right: 10px;
         }
 }
 
 .selection-restaurants {
     background-color: u.$color-grey-light;
     padding: 54px 18px 66px 17px;
+    @include u.desktop {
+        padding: 30px 180px;
+    }
 
         &__title {
             @include u.font-text-large;
             font-size: 24px;
             padding-bottom: 20px;
+            @include u.desktop {
+                padding-bottom: 28px
+            }
         }
 }
 
@@ -104,6 +117,9 @@
     @include u.tablet {
         flex-wrap: wrap;
         flex-direction: row; //on remet en ligne les cards pour désactivé column du mobile first
+    }
+    @include u.desktop {
+        justify-content: space-between;
     }
 }
 
@@ -115,7 +131,10 @@
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
     @include a.hover-lighten;
     @include u.tablet {
-        width: calc(50% - 9px);
+        width: calc((100% - 18px)/2);
+    }
+    @include u.desktop {
+        max-width: 490px;
     }
 
         &__img-wrapper {

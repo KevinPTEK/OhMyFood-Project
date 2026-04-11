@@ -4,18 +4,31 @@
     background-color: u.$color-grey-dark;
     color: u.$color-white;
     padding: 22px 0 22px 25px;
+    @include u.desktop {
+        display: flex;
+        align-items: center;
+        }
 
         &__title {
             font-family: u.$font-title;
             font-size: 18px;
             font-weight: 400;
             padding-bottom: 16px;
+            @include u.desktop {
+                padding: 0 30px 0 100px;
+                order: 2;
+            }
         }
 
         &__list {
             display: flex;
             flex-direction: column;
             gap: 7px;
+            @include u.desktop {
+                flex-direction: row;
+                margin-left: auto;
+                gap: 20px;
+            }
         }
 
         &__link {

@@ -31,16 +31,35 @@ ul {
   color: #FFFFFF;
   padding: 22px 0 22px 25px;
 }
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    align-items: center;
+  }
+}
 .footer__title {
   font-family: "Shrikhand", cursive;
   font-size: 18px;
   font-weight: 400;
   padding-bottom: 16px;
 }
+@media (min-width: 1024px) {
+  .footer__title {
+    padding: 0 30px 0 100px;
+    order: 2;
+  }
+}
 .footer__list {
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+@media (min-width: 1024px) {
+  .footer__list {
+    flex-direction: row;
+    margin-left: auto;
+    gap: 20px;
+  }
 }
 .footer__link {
   font-family: "Roboto", sans-serif;
@@ -158,9 +177,14 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 39px 10px 57px 10px;
+  padding: 39px 10px 57px;
   gap: 18px;
   background-color: #F6F6F6;
+}
+@media (min-width: 1024px) {
+  .explore-restaurants {
+    padding: 30px 0;
+  }
 }
 .explore-restaurants__title {
   font-family: "Roboto", sans-serif;
@@ -179,7 +203,12 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 48px 20px 68px 20px;
+  padding: 48px 20px 68px;
+}
+@media (min-width: 1024px) {
+  .operations {
+    padding: 50px 180px;
+  }
 }
 .operations__title {
   font-family: "Roboto", sans-serif;
@@ -230,17 +259,28 @@ ul {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  padding-right: 10px;
 }
 
 .selection-restaurants {
   background-color: #F6F6F6;
   padding: 54px 18px 66px 17px;
 }
+@media (min-width: 1024px) {
+  .selection-restaurants {
+    padding: 30px 180px;
+  }
+}
 .selection-restaurants__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
   padding-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .selection-restaurants__title {
+    padding-bottom: 28px;
+  }
 }
 
 .cards-list {
@@ -252,6 +292,11 @@ ul {
   .cards-list {
     flex-wrap: wrap;
     flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .cards-list {
+    justify-content: space-between;
   }
 }
 
@@ -269,7 +314,12 @@ ul {
 }
 @media (min-width: 768px) {
   .card {
-    width: calc(50% - 9px);
+    width: calc((100% - 18px) / 2);
+  }
+}
+@media (min-width: 1024px) {
+  .card {
+    max-width: 490px;
   }
 }
 .card__img-wrapper {
