@@ -202,6 +202,8 @@ ul {
   border-radius: 20px;
   height: 72px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  margin-left: 12px;
+  position: relative;
 }
 @media (min-width: 768px) {
   .operations__step {
@@ -212,7 +214,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   z-index: 1;
   left: -12px;
   background-color: #9356DC;
@@ -222,7 +224,7 @@ ul {
   height: 24px;
 }
 .operations__icone {
-  padding: 0 24px 0 10px;
+  padding: 0 27px 0 33px;
 }
 .operations__step-title {
   font-family: "Roboto", sans-serif;
@@ -246,6 +248,12 @@ ul {
   flex-direction: column;
   gap: 18px;
 }
+@media (min-width: 768px) {
+  .cards-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
 
 .card {
   text-decoration: none;
@@ -258,6 +266,11 @@ ul {
 .card:hover {
   filter: brightness(1.1);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
+}
+@media (min-width: 768px) {
+  .card {
+    width: calc(50% - 9px);
+  }
 }
 .card__img-wrapper {
   position: relative;
