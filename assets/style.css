@@ -173,9 +173,7 @@ ul {
   gap: 17px;
   height: 50px;
   background-color: #EAEAEA;
-  position: relative;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  height: 50px;
 }
 @media (min-width: 1024px) {
   .location {
@@ -252,7 +250,6 @@ ul {
   height: 72px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   margin-left: 12px;
-  position: relative;
 }
 @media (min-width: 768px) {
   .operations__step {
