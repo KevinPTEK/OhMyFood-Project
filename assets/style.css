@@ -41,6 +41,8 @@ ul {
   .footer {
     display: flex;
     align-items: center;
+    height: 114px;
+    padding: 67px 0 30px;
   }
 }
 .footer__title {
