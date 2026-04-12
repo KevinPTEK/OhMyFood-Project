@@ -9,6 +9,7 @@ body, h1, h2, h3, p {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .header {
@@ -21,8 +22,8 @@ ul {
   z-index: 1;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.header__title {
-  font-family: "Shrikhand";
+.header__logo {
+  height: 36px;
 }
 
 .footer {
@@ -31,7 +32,7 @@ ul {
   padding: 22px 0 22px 25px;
 }
 .footer__title {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", cursive;
   font-size: 18px;
   font-weight: 400;
   padding-bottom: 16px;
@@ -40,10 +41,9 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 7px;
-  list-style: none;
 }
 .footer__link {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-sherif;
   font-weight: 500;
   color: white;
   text-decoration: none;
@@ -55,7 +55,7 @@ ul {
 .btn {
   display: flex;
   align-items: center;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-sherif;
   font-weight: 500;
   font-size: 16px;
   height: 50px;
@@ -71,14 +71,15 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   gap: 17px;
   background-color: #EAEAEA;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 50px;
 }
 .location__text {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-sherif;
   font-weight: 500;
-  margin: 15px 0 15px 0;
 }
 
 .explore-restaurants {
@@ -90,16 +91,16 @@ ul {
   background-color: #F6F6F6;
 }
 .explore-restaurants__title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-sherif;
   font-weight: 700;
   text-align: center;
 }
 .explore-restaurants__text {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-sherif;
   font-weight: 300;
   text-align: center;
   font-size: 18px;
-  margin-bottom: 27px;
+  margin-bottom: 9px;
 }
 
 .operations {
@@ -109,23 +110,23 @@ ul {
   padding: 48px 20px 68px 20px;
 }
 .operations__title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-sherif;
   font-weight: 700;
 }
 .operations__step {
   display: flex;
   align-items: center;
+  position: relative;
   background: #F6F6F6;
   border-radius: 20px;
   height: 72px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  gap: 26px;
 }
 .operations__number {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   z-index: 1;
   left: -12px;
   background-color: #9356DC;
@@ -134,8 +135,11 @@ ul {
   width: 24px;
   height: 24px;
 }
+.operations__icone {
+  padding: 0 27px 0 33px;
+}
 .operations__step-title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-sherif;
   font-weight: 500;
   font-size: 16px;
 }
@@ -145,7 +149,7 @@ ul {
   padding: 54px 18px 66px 17px;
 }
 .selection-restaurants__title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-sherif;
   font-weight: 700;
   font-size: 24px;
   padding-bottom: 20px;
@@ -173,7 +177,7 @@ ul {
   object-fit: cover;
 }
 .card__badge {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-sherif;
   font-weight: 500;
   position: absolute;
   top: 12px;
@@ -190,12 +194,12 @@ ul {
   padding: 16px 25px 12px 13px;
 }
 .card__title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-sherif;
   font-weight: 700;
   font-size: 18px;
 }
 .card__place {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-sherif;
   font-weight: 300;
   font-size: 17px;
 }
