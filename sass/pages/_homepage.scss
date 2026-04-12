@@ -4,19 +4,20 @@
 .location {
     @include u.flex-center;
     gap: 17px;
+    height: 50px;
+    position: relative;
     background-color: u.$color-grey;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
         &__text {
             @include u.font-text-medium;
-            margin: 15px 0 15px 0;
         }
 }
 
 .explore-restaurants {
     @include u.flex-column;
     align-items: center;
-    padding: 39px 10px 57px 10px;
+    padding: 39px 10px 57px;
     gap: 18px;
     background-color: u.$color-grey-light;
 
@@ -29,14 +30,14 @@
             @include u.font-text-small;
             text-align: center;
             font-size: 18px;
-            margin-bottom: 27px;
+            margin-bottom: 9px;
         }
 }
 
 .operations {
     @include u.flex-column;
     gap: 25px;
-    padding: 48px 20px 68px 20px;
+    padding: 48px 20px 68px;
 
         &__title {
             @include u.font-text-large;
@@ -45,16 +46,17 @@
         &__step {
             display: flex;
             align-items: center;
+            position: relative;
             background: u.$color-grey-light;
             border-radius: 20px;
             height: 72px;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-            gap: 26px;
+            margin-left: 12px;
         }
 
         &__number {
             @include u.flex-center;
-            position: relative;
+            position: absolute;
             z-index: 1;
             left: -12px;
             background-color: u.$color-primary;
@@ -64,9 +66,14 @@
             height: 24px;
         }
 
+        &__icone {
+            padding: 0 27px 0 33px;
+        }
+
         &__step-title {
             @include u.font-text-medium;
             font-size: 16px;
+            padding-right: 10px;
         }
 }
 
