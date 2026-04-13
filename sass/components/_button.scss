@@ -16,3 +16,8 @@
     cursor: pointer;
     @include a.hover-lighten;
 }
+
+.back {
+    position: absolute;
+    left: 17px;
+}
