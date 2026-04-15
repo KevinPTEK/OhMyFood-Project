@@ -15,9 +15,9 @@
     padding: 0 18.5px 0 18.5px;
     cursor: pointer;
     @include a.hover-lighten;
-}
 
-.back {
-    position: absolute;
-    left: 17px;
+    &__order {
+        justify-content: center;
+        min-width: 186px;
+    }
 }

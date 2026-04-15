@@ -1,0 +1,91 @@
+@use '../utils' as u;
+@use '../animations' as a;
+
+
+.hero__image {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+
+.menu {
+    @include u.flex-column;
+    gap: 40px;
+    padding: 32px 13px 40px;
+    background-color: u.$color-grey-light;
+    position: relative;
+    margin-top: -45px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    &__header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__title{
+        font-family: u.$font-title;
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    &__heart {
+        @include a.hearts-interaction;
+    }
+}
+
+.menu-section {
+    @include u.flex-column;
+    gap: 12px;
+    &:nth-child(2) .dish { animation-delay: 0.3s; } // J'utilise la pseudo class :nth-child pour cibler entrée/plat/dessert dans menu-section pour l'animation
+    &:nth-child(3) .dish { animation-delay: 0.7s; }
+    &:nth-child(4) .dish { animation-delay: 1.2s; }
+
+    &__title {
+        @include u.font-text-small;
+        font-size: 16px;
+        border-bottom: 3px solid u.$color-tertiary;
+        width: 40px;
+        padding-bottom: 4px;
+    }
+}
+
+.dish {
+    background: white;
+    box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 13.5px 15px;
+    position: relative;
+    opacity: 0; //pour ne pas voir les plats avant l'animation
+    animation: fade-in-up 1s ease forwards;
+
+        &__info {
+            @include u.flex-column;
+            gap: 5px;
+        }
+
+        &__title {
+            @include u.font-text-medium;
+            font-size: 18px;
+        }
+
+        &__description {
+            @include u.font-text-small;
+            font-size: 15px;
+        }
+
+        &__price {
+            @include u.font-text-large;
+            font-size: 15px;
+            position: absolute;
+            right: 15px;
+            top: 37.5px;
+        }
+}
+
+.send-order-button {
+    display: flex;
+    justify-content: center;
+}
+

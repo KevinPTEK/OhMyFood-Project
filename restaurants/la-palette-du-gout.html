@@ -14,13 +14,15 @@
         
         <header class="header">
             <img class="header__logo" src="../assets/images/logo/ohmyfood@2x.svg" alt="Logo du site OhMyFood">
-            <a class="back" href="../index.html">
+            <a class="header__back" href="../index.html">
                 <img src="../assets/images/icones/back.svg" alt="bouton back pour revenir sur la page principale">
             </a>
         </header>
 
         <main>
-            <img class="hero__image" src="../assets/images/restaurants/la-palette-du-gout.jpg" alt="image du restaurant la pallette du gout">
+            <div class="hero">
+                <img class="hero__image" src="../assets/images/restaurants/la-palette-du-gout.jpg" alt="image du restaurant la pallette du gout">
+            </div>
 
             <section class="menu">
                 <div class="menu__header">
@@ -84,11 +86,57 @@
                         </div>
                     </div>
 
-                    
+                    <div class="menu-section">
+                        <h2 class="menu-section__title">Desserts</h2>
 
+                        <div class="dish">
+                            <div class="dish__info">
+                                <h3 class="dish__title">Paris-Brest</h3>
+                                <p class="dish__description">Revisité</p>
+                            </div>
+                            <div class="dish__price">18€</div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="dish__info">
+                                <h3 class="dish__title">Macaron au chocolat d'exception</h3>
+                                <p class="dish__description">Et glace à la vanille de Madagascar</p>
+                            </div>
+                            <div class="dish__price">22€</div>
+                        </div>
+
+                        <div class="dish">
+                            <div class="dish__info">
+                                <h3 class="dish__title">Mousse au chocolat</h3>
+                                <p class="dish__description">Au piment d'Espelette et à la truffe noire</p>
+                            </div>
+                            <div class="dish__price">23€</div>
+                        </div>
+                    </div>
+
+                    <div class="send-order-button">
+                        <button class="btn btn__order">Commander</button>
+                    </div>
             </section>
-
-
         </main>
+
+        <footer class="footer">
+            <h2 class="footer__title">ohmyfood</h2>
+            <ul class="footer__list">
+                <li>
+                    <a href="#" class="footer__link"><img class="footer__img" src="../assets/images/icones/fork-knife.svg" alt="image de couvert">Proposer un restaurant</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link"><img class="footer__img" src="../assets/images/icones/hands.svg" alt="image d'une poignée de main">Devenir partenaire</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="mailto:contact@ohmyfood.com" class="footer__link">Contact</a>
+                </li>
+            </ul>
+        </footer>
+
     </body>
 </html>
