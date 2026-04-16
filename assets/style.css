@@ -224,6 +224,11 @@ ul {
 }
 @media (min-width: 1024px) {
   .operations {
+    padding: 50px 90px;
+  }
+}
+@media (min-width: 1280px) {
+  .operations {
     padding: 50px 207px 50px 180px;
   }
 }
@@ -284,6 +289,11 @@ ul {
   padding: 54px 18px 66px 17px;
 }
 @media (min-width: 1024px) {
+  .selection-restaurants {
+    padding: 30px 90px;
+  }
+}
+@media (min-width: 1280px) {
   .selection-restaurants {
     padding: 30px 180px;
   }
