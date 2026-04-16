@@ -33,6 +33,11 @@
     &__heart {
         @include a.hearts-interaction;
     }
+
+    &__order {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .menu-section {
@@ -110,8 +115,4 @@
     width: 59px;
 }
 
-.send-order-button {
-    display: flex;
-    justify-content: center;
-}
 
