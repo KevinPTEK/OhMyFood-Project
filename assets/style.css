@@ -243,6 +243,11 @@ ul {
 }
 @media (min-width: 1024px) {
   .operations {
+    padding: 50px 90px;
+  }
+}
+@media (min-width: 1280px) {
+  .operations {
     padding: 50px 207px 50px 180px;
   }
 }
@@ -304,6 +309,11 @@ ul {
 }
 @media (min-width: 1024px) {
   .selection-restaurants {
+    padding: 30px 90px;
+  }
+}
+@media (min-width: 1280px) {
+  .selection-restaurants {
     padding: 30px 180px;
   }
 }
@@ -358,6 +368,11 @@ ul {
   .card {
     max-width: 490px;
     width: calc((100% - 50px) / 2);
+  }
+}
+@media (min-width: 1280px) {
+  .card {
+    max-width: 690px;
   }
 }
 .card__img-wrapper {

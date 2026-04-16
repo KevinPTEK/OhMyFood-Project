@@ -48,6 +48,9 @@
     gap: 25px;
     padding: 48px 20px 68px;
     @include u.desktop {
+        padding: 50px 90px;
+    }
+    @include u.large {
         padding: 50px 207px 50px 180px;
     }
 
@@ -105,6 +108,9 @@
     background-color: u.$color-grey-light;
     padding: 54px 18px 66px 17px;
     @include u.desktop {
+        padding: 30px 90px;
+    }
+    @include u.large {
         padding: 30px 180px;
     }
 
@@ -144,6 +150,9 @@
     @include u.desktop {
         max-width: 490px;
         width: calc((100% - 50px)/2);
+    }
+    @include u.large {
+        max-width: 690px;
     }
 
         &__img-wrapper {
