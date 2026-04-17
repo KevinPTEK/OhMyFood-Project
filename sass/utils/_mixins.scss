@@ -28,6 +28,13 @@
     flex-direction: column;
 }
 
+//divers
+@mixin text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 // Media queries
 
 @mixin tablet {

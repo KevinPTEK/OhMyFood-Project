@@ -85,6 +85,10 @@
     animation: fade-in-up 1s ease forwards;
     cursor: pointer;
 
+        &:hover .dish__check {
+            width: 59px;
+        }
+
         &__check {
             @include u.flex-center;
             background-color: u.$color-tertiary;
@@ -107,18 +111,14 @@
 
         &__title {
             @include u.font-text-medium;
+            @include u.text-ellipsis;
             font-size: 18px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         &__description {
             @include u.font-text-small;
+            @include u.text-ellipsis;
             font-size: 15px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         &__price {
@@ -126,10 +126,6 @@
             font-size: 15px;
             padding: 25px 15px 0 0;
         }
-}
-
-.dish:hover .dish__check {
-    width: 59px;
 }
 
 

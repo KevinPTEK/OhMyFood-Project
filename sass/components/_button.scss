@@ -16,7 +16,7 @@
     cursor: pointer;
     @include a.hover-lighten;
 
-    &__order {
+    &--order {
         justify-content: center;
         min-width: 186px;
     }

@@ -179,7 +179,7 @@ ul {
   filter: brightness(1.1);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
 }
-.btn__order {
+.btn--order {
   justify-content: center;
   min-width: 186px;
 }
@@ -582,6 +582,9 @@ ul {
   animation: fade-in-up 1s ease forwards;
   cursor: pointer;
 }
+.dish:hover .dish__check {
+  width: 59px;
+}
 .dish__check {
   display: flex;
   justify-content: center;
@@ -605,28 +608,24 @@ ul {
 .dish__title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 18px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 18px;
 }
 .dish__description {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 15px;
 }
 .dish__price {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 15px;
   padding: 25px 15px 0 0;
-}
-
-.dish:hover .dish__check {
-  width: 59px;
 }
 
 /*# sourceMappingURL=style.css.map */
