@@ -30,6 +30,7 @@
         &__title {
             @include u.font-text-large;
             text-align: center;
+            font-size: 24px;
             @include u.desktop {
                 font-size: 40px;
             }
@@ -59,8 +60,7 @@
         }
 
         &__container {
-            display: flex;
-            flex-direction: column;
+            @include u.flex-column;
             gap: 25px;
             @include u.tablet {
                 flex-direction: row;
@@ -122,19 +122,19 @@
                 padding-bottom: 28px
             }
         }
-}
 
-.cards-list {
-    @include u.flex-column;
-    gap: 18px;
-    @include u.tablet {
-        flex-wrap: wrap;
-        flex-direction: row; //on remet en ligne les cards pour désactivé column du mobile first
-    }
-    @include u.desktop {
-        justify-content: space-between;
-        gap: 50px;
-    }
+        &__list {
+            @include u.flex-column;
+            gap: 18px;
+            @include u.tablet {
+                flex-wrap: wrap;
+                flex-direction: row; //on remet en ligne les cards pour désactivé column du mobile first
+            }
+            @include u.desktop {
+                justify-content: space-between;
+                gap: 50px;
+            }
+        }
 }
 
 .card {

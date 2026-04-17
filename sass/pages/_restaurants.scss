@@ -9,9 +9,6 @@
     @include u.desktop {
         height: 383px;
     }
-    @include u.large {
-        height: 383px
-    }
 }
 
 .menu {
@@ -50,34 +47,35 @@
         @include a.hearts-interaction;
     }
 
+    &__section {
+        @include u.flex-column;
+        gap: 12px;
+        &:nth-child(2) .dish { animation-delay: 0.3s; } // J'utilise la pseudo class :nth-child pour cibler entrée/plat/dessert dans menu-section pour l'animation
+        &:nth-child(3) .dish { animation-delay: 0.7s; }
+        &:nth-child(4) .dish { animation-delay: 1.2s; }
+
+        &-title {
+            @include u.font-text-small;
+            font-size: 16px;
+            border-bottom: 3px solid u.$color-tertiary;
+            width: 40px;
+            padding-bottom: 4px;
+        }
+    }
+
     &__order {
         display: flex;
         justify-content: center;
     }
 }
 
-.menu-section {
-    @include u.flex-column;
-    gap: 12px;
-    &:nth-child(2) .dish { animation-delay: 0.3s; } // J'utilise la pseudo class :nth-child pour cibler entrée/plat/dessert dans menu-section pour l'animation
-    &:nth-child(3) .dish { animation-delay: 0.7s; }
-    &:nth-child(4) .dish { animation-delay: 1.2s; }
-
-    &__title {
-        @include u.font-text-small;
-        font-size: 16px;
-        border-bottom: 3px solid u.$color-tertiary;
-        width: 40px;
-        padding-bottom: 4px;
-    }
-}
 
 .dish {
     display: flex;
     align-items: center;
     height: 69px;
     overflow: hidden;
-    background: white;
+    background: u.$color-white;
     box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 13.5px 0 13.5px 15px;
