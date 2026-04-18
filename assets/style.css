@@ -588,9 +588,6 @@ ul {
   transition: width 0.3s ease;
   height: 69px;
 }
-.dish__check-img {
-  background: #99E2D0;
-}
 .dish__info {
   display: flex;
   flex-direction: column;
