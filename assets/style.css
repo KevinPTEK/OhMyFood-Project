@@ -321,7 +321,6 @@ ul {
 .selection-restaurants__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 24px;
   padding-bottom: 20px;
 }
 @media (min-width: 1024px) {
@@ -370,7 +369,7 @@ ul {
     width: calc((100% - 50px) / 2);
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1580px) {
   .card {
     max-width: 690px;
   }

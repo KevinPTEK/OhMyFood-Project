@@ -116,7 +116,6 @@
 
         &__title {
             @include u.font-text-large;
-            font-size: 24px;
             padding-bottom: 20px;
             @include u.desktop {
                 padding-bottom: 28px
@@ -151,7 +150,7 @@
         max-width: 490px;
         width: calc((100% - 50px)/2);
     }
-    @include u.large {
+    @include u.xlarge {
         max-width: 690px;
     }
 
