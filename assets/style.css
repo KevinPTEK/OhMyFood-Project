@@ -369,7 +369,7 @@ ul {
     width: calc((100% - 50px) / 2);
   }
 }
-@media (min-width: 1580px) {
+@media (min-width: 1536px) {
   .card {
     max-width: 690px;
   }
