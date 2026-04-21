@@ -10,7 +10,7 @@
     height: 100%;
     animation: hide-loader 1s ease forwards 2s;
     background-color: u.$color-white;
-    z-index: 3;
+    z-index: 2;
 
     &__spinner {
       position: relative;
