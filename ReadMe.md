@@ -1,1 +1,1 @@
-Project 4 : OhMyFood
+Project 4 OpenClassRooms : OhMyFood
